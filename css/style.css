@@ -57,10 +57,9 @@ class_properties {}
 /* BASE LAYOUT - inizio */
 regole layout {}
   .main-wrapper {
-    width: 100%;
+    width: 70%;
     height: 100vh;
     margin: 0 auto;
-    background-color: lightgray;
   }
 /* BASE LAYOUT - fine */
 
@@ -79,29 +78,35 @@ nav {}
     width: 100%;
     height: 70px;
     line-height: 70px;
-    background-color: cyan;   /*DEBUGG*/
+  }
+  nav a {
+    color: #a08e8f;
   }
   nav .menu-left {
-    width: 40%;
-    background-color: blue;
+    width: 30%;
+    text-transform: uppercase;
   }
+  nav .menu-left span {
+    color: black;
+  }
+
   nav .menu-right {
     width: 50%;
-    background-color: pink;
   }
 
   nav img.logo {
     width: 100px;
-    margin-right: 5px;
+    margin-right: 20px;
+    margin-top: 18px;
   }
 
   nav ul li {
-    margin-right: 10px;
+    margin-right: 20px;
   }
 
-  /* nav .menu-right {
+  nav .menu-right {
     text-align: right;
-  } */
+  }
 
   nav .with-dropdown{
     position: relative;
@@ -110,22 +115,45 @@ nav {}
   nav ul.dropdown {
     position: absolute;
     top: 100%;
-    right: -38px;
+    right: -40px;
     width: 130px;
     text-align: left;
-    background-color: pink;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    line-height: normal;
+    display: none;
   }
   nav ul.dropdown li {
     margin-bottom: 15px;
   }
-
-  nav .hide {
-    display: none;
+  nav ul.dropdown li a .new-section {
+    color: #eb008d;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    top: 96px;
+    left: 56px;
   }
 
-  nav .show {
+  nav button {
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #eb008d;
+    color: white;
+  }
+
+
+/* JS class */
+/* Visualizza menu dropdown */
+.dropdown.active {
     display: block;
   }
+
+  /* nav .hide i {
+    display: none;
+  } */
 /* NAVBAR - end rules */
 
 
