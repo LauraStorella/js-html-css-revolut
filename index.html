@@ -19,13 +19,12 @@
       <header>
 
         <nav class="clearfix">
+          <!-- Left-menu inizio-->
+
           <!-- Logo inizio -->
-          <div class="logo float">
-            <img class="logo" src="img/logo-revolut.png" alt="Company-Logo">
-          </div>
+          <img class="logo float" src="img/logo-revolut.png" alt="Company-Logo">
           <!-- Logo fine -->
 
-          <!-- Left-menu inizio-->
           <div class="wrapper menu-left float">
             <ul class="menu left list-unstyled">
               <li><a href="#">Personale</a></li>
@@ -37,9 +36,39 @@
           <!-- Right-menu inizio -->
           <div class="wrapper menu-right float">
             <ul class="menu right list-unstyled">
-              <li><a href="#">Tariffazione</a></li>
-              <li><a href="#">Conti</a></li>
-              <li><a href="#">Prodotti</a></li>
+              <li class="with-dropdown"><a href="#">Tariffazione</a>
+                <!-- Dropdown inizio -->
+                <ul class="dropdown hide">
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                  <li><a href="#">Link 4</a></li>
+                  <li><a href="#">Link 5</a></li>
+                </ul>
+                <!-- Dropdown fine -->
+              </li>
+              <li class="with-dropdown"><a href="#">Conti</a>
+                <!-- Dropdown inizio -->
+                <ul class="dropdown hide">
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                  <li><a href="#">Link 4</a></li>
+                  <li><a href="#">Link 5</a></li>
+                </ul>
+                <!-- Dropdown fine -->
+              </li>
+              <li class="with-dropdown"><a href="#">Prodotti</a>
+                <!-- Dropdown inizio -->
+                <ul class="dropdown hide">
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                  <li><a href="#">Link 4</a></li>
+                  <li><a href="#">Link 5</a></li>
+                </ul>
+                <!-- Dropdown fine -->
+              </li>
               <li class="with-dropdown"><a href="#">Azienda</a>
                 <!-- Dropdown inizio -->
                 <ul class="dropdown hide">
@@ -51,9 +80,14 @@
                 </ul>
                 <!-- Dropdown fine -->
               </li>
-              <li><a href="#">Aiuto</a></li>
-              <li><a href="#">IT</a></li>
+              <li class="with-dropdown"><a href="#">Aiuto</a></li>
+              <li class="with-dropdown"><a href="#">IT
+                <!-- <span class="show"><i class="fas fa-sort-down"></i></span>
+                <span class="hide"><i class="fas fa-sort-up"></i></span> -->
+              </a>
+            </li>
             </ul>
+            <!-- <button type="button" name="button">Scarica l'app</button> -->
           </div>
           <!-- Right-menu fine -->
         </nav>

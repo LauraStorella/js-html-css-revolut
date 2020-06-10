@@ -6,7 +6,7 @@ $(document).ready(function () {
       $(this).children('.dropdown').addClass('show');
     }
   );
-
+  
   $('.with-dropdown').mouseleave(
     function() {
       $('.with-dropdown .dropdown').removeClass('show');

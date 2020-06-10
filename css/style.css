@@ -1,18 +1,3 @@
-/* DEBUGG - start rules*/
-/* debug {}
-  .debug .container {
-    background-color: #16D893;
-    border: 1px solid blue;
-  }
-  .debug [class*="col-"] {
-    background-color: yellow;
-    border: 1px solid red;
-    height: 100px;
-  } */
-/* DEBUGG - end rules */
-
-
-
 /* GENERAL RULES (reset) - start */
 general rules {}
   * {
@@ -72,7 +57,7 @@ class_properties {}
 /* BASE LAYOUT - inizio */
 regole layout {}
   .main-wrapper {
-    width: 60%;
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
     background-color: lightgray;
@@ -96,12 +81,12 @@ nav {}
     line-height: 70px;
     background-color: cyan;   /*DEBUGG*/
   }
-  nav.left {
+  nav .menu-left {
     width: 40%;
     background-color: blue;
   }
-  nav.right {
-    width: 60%;
+  nav .menu-right {
+    width: 50%;
     background-color: pink;
   }
 
@@ -114,9 +99,9 @@ nav {}
     margin-right: 10px;
   }
 
-  nav ul.right {
+  /* nav .menu-right {
     text-align: right;
-  }
+  } */
 
   nav .with-dropdown{
     position: relative;
@@ -177,3 +162,18 @@ footer {}
   /* Media Query - lg  */
   @media all and (min-width: 1200px) {}
 /* MEDIA QUERY -end rules */
+
+
+
+/* DEBUGG - start rules*/
+/* debug {}
+  .debug .container {
+    background-color: #16D893;
+    border: 1px solid blue;
+  }
+  .debug [class*="col-"] {
+    background-color: yellow;
+    border: 1px solid red;
+    height: 100px;
+  } */
+/* DEBUGG - end rules */
